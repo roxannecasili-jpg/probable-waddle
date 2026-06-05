@@ -3,31 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roxanne S. Casili - Portfolio</title>
+    <title>Roxanne Casili - Social Media Manager & Virtual Assistant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <h1 class="logo">ROXANNE CASILI</h1>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+            <div class="logo">Roxanne Casili</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="hero" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">ROXANNE S. CASILI</h1>
-            <p class="hero-subtitle">Social Media Manager | Content Creator | Virtual Assistant</p>
-            <p class="hero-description">Building brands through strategic content and meaningful engagement</p>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Meet <span class="highlight">Roxanne Casili</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Helping business owners <span class="accent">focus on growth</span> while I handle the <span class="accent">digital details</span>.
+                </p>
+                <p class="hero-description">
+                    Social Media Manager | Content Creator | Virtual Assistant
+                </p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="https://via.placeholder.com/400x500/1a1a2e/00d4ff?text=Roxanne" alt="Roxanne Casili" class="profile-img">
+                </div>
+            </div>
         </div>
         <div class="scroll-indicator">
             <span>Scroll to explore</span>
@@ -40,49 +62,109 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="profile-picture-container">
-                    <img src="https://github.com/roxannecasili-jpg/probable-waddle/raw/main/profile.jpg" alt="Roxanne S. Casili" class="profile-picture">
-                </div>
-                <div class="about-text-section">
-                    <p class="about-text">
-                        I'm a dedicated Social Media Manager and Content Creator with a passion for helping brands tell their stories. 
-                        With experience in content creation, audience engagement, and digital marketing, I specialize in building authentic 
-                        connections between brands and their communities.
+                <div class="about-text">
+                    <p class="intro-text">
+                        Hi, I'm Roxanne "Hans" Casili, a Social Media Manager and Virtual Assistant based in Lucena City, Philippines.
                     </p>
-                    <div class="about-details">
-                        <div class="detail-card">
-                            <h3>Location</h3>
-                            <p>Lucena City, Philippines</p>
-                        </div>
-                        <div class="detail-card">
-                            <h3>Email</h3>
-                            <p>hanssevillano.va@gmail.com</p>
-                        </div>
-                        <div class="detail-card">
-                            <h3>Phone</h3>
-                            <p>+63 9624142831</p>
-                        </div>
-                        <div class="detail-card">
-                            <h3>LinkedIn</h3>
-                            <p><a href="https://linkedin.com/in/roxanne-casili-178774324" target="_blank">View Profile</a></p>
-                        </div>
+                    <p>
+                        My background in e-commerce taught me the importance of customer experience, consistency, and business growth. With over 7 years of experience managing online businesses, I've developed a deep understanding of what it takes to build successful digital operations.
+                    </p>
+                    <p>
+                        Today, I support <strong>financial advisors, professionals, and growing businesses</strong> through social media management, content creation, lead generation, and administrative support. I specialize in creating systems that help businesses stay organized, visible, and connected with their audience.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>7+</h3>
+                        <p>Years Managing Online Businesses</p>
+                    </div>
+                    <div class="stat">
+                        <h3>15+</h3>
+                        <p>Brands Supported</p>
+                    </div>
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Content Pieces Created Monthly</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Professional Summary Section -->
-    <section class="professional-summary">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Professional Summary</h2>
-            <div class="summary-card">
-                <p>
-                    Social Media Manager and Virtual Assistant with proven experience supporting brands through content creation, 
-                    content planning, social media management, audience engagement, and marketing support. Skilled in creating 
-                    educational content, managing multi-platform social media accounts, and supporting personal branding initiatives. 
-                    Experienced with Canva, CapCut, GoHighLevel (GHL), AI-assisted content creation, and social media strategy.
-                </p>
+            <h2 class="section-title">Services I Offer</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Social Media Management</h3>
+                    <p>Strategic content creation, community engagement, and growth strategies across Facebook, Instagram, LinkedIn, and TikTok.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✍️</div>
+                    <h3>Content Creation & Planning</h3>
+                    <p>Educational content, reels, graphics, and brand-focused copy that aligns with your business goals and resonates with your audience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Lead Generation & Nurturing</h3>
+                    <p>Audience engagement strategies, conversion optimization, and follow-up systems to turn followers into clients.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>CRM & Marketing Support</h3>
+                    <p>GoHighLevel CRM setup, Facebook Ads management, and marketing automation to scale your operations efficiently.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛍️</div>
+                    <h3>E-Commerce Management</h3>
+                    <p>Store operations, customer service, product promotion, and conversion strategy based on years of practical experience.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>Administrative Support</h3>
+                    <p>Email management, scheduling, file organization, data entry, and workflow coordination to keep your operations running smoothly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x250/0a1428/00d4ff?text=JNB+Executant" alt="JNB Executant">
+                    </div>
+                    <h3>JNB Executant</h3>
+                    <p>Legal Operations Consulting</p>
+                    <p class="project-desc">Created educational LinkedIn content and branding-focused content strategy supporting personal branding initiatives.</p>
+                    <span class="badge">LinkedIn Strategy</span>
+                    <span class="badge">Content Creation</span>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x250/0a1428/00d4ff?text=Marissa+Torres" alt="Marissa Torres">
+                    </div>
+                    <h3>Marissa Torres - Greece Golden Visa</h3>
+                    <p>Real Estate & Immigration Services</p>
+                    <p class="project-desc">Managed multi-platform content (Facebook, Instagram, LinkedIn, TikTok) and created marketing materials for visa services.</p>
+                    <span class="badge">Multi-Platform Management</span>
+                    <span class="badge">Content Design</span>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/300x250/0a1428/00d4ff?text=Gillens+Sizzlers" alt="Gillens Sizzlers">
+                    </div>
+                    <h3>Gillens Sizzlers</h3>
+                    <p>Food & Restaurant Business</p>
+                    <p class="project-desc">Conducted social media audits, created promotional graphics, and supported content planning with competitor research.</p>
+                    <span class="badge">Social Audit</span>
+                    <span class="badge">Promotional Content</span>
+                </div>
             </div>
         </div>
     </section>
@@ -90,98 +172,79 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Core Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Content Management</h3>
-                    <p>Social Media Management | Content Creation | Content Planning</p>
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3>Social Media & Content</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Social Media Management</span>
+                        <span class="skill-tag">Content Creation</span>
+                        <span class="skill-tag">Content Planning</span>
+                        <span class="skill-tag">Content Strategy</span>
+                        <span class="skill-tag">Community Engagement</span>
+                        <span class="skill-tag">Canva Design</span>
+                        <span class="skill-tag">CapCut Video Editing</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Strategy & Engagement</h3>
-                    <p>Content Strategy | Community Engagement | Audience Growth</p>
+                <div class="skill-category">
+                    <h3>Marketing & Growth</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Lead Generation</span>
+                        <span class="skill-tag">GoHighLevel (GHL)</span>
+                        <span class="skill-tag">CRM Support</span>
+                        <span class="skill-tag">Facebook Ads</span>
+                        <span class="skill-tag">Audience Growth</span>
+                        <span class="skill-tag">Marketing Automation</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Design Tools</h3>
-                    <p>Canva | CapCut | GoHighLevel (GHL)</p>
+                <div class="skill-category">
+                    <h3>Platforms</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Facebook</span>
+                        <span class="skill-tag">Instagram</span>
+                        <span class="skill-tag">LinkedIn</span>
+                        <span class="skill-tag">TikTok</span>
+                        <span class="skill-tag">Email Marketing</span>
+                    </div>
                 </div>
-                <div class="skill-card">
-                    <h3>Platform Expertise</h3>
-                    <p>Facebook | Instagram | LinkedIn | TikTok</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Business Tools</h3>
-                    <p>CRM Support | Marketing Support | AI-assisted Content</p>
-                </div>
-                <div class="skill-card">
-                    <h3>Education</h3>
-                    <p>Bachelor's Degree | Technological Institute of the Philippines</p>
+                <div class="skill-category">
+                    <h3>Business Operations</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">E-Commerce Management</span>
+                        <span class="skill-tag">Customer Service</span>
+                        <span class="skill-tag">Administrative Support</span>
+                        <span class="skill-tag">Project Coordination</span>
+                        <span class="skill-tag">Data Management</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <!-- Quick Facts Section -->
+    <section class="quick-facts">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
-            
-            <div class="experience-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Social Media Manager</h3>
-                        <p class="company">JNB Expectant – Ms. Rey (Remote)</p>
-                        <p class="date">February 2024 – Present</p>
-                        <ul class="responsibilities">
-                            <li>Created educational and authority-building LinkedIn content to support personal branding and audience engagement</li>
-                            <li>Developed content plans and branding-focused content aligned with business goals and target audiences</li>
-                            <li>Support personal branding initiatives and content planning activities</li>
-                            <li>Assist with GoHighLevel (GHL), CRM, and marketing support tasks</li>
-                        </ul>
-                    </div>
+            <h2 class="section-title">Why Work With Me</h2>
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-icon">🎯</div>
+                    <h3>Strategic Focus</h3>
+                    <p>I don't just post content—I create systems aligned with your business goals</p>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Social Media Manager (Project-Based)</h3>
-                        <p class="company">Marissa Torres – Greece Golden Visa Project (Remote)</p>
-                        <p class="date">January 2026 – Present</p>
-                        <ul class="responsibilities">
-                            <li>Manage Facebook, Instagram, LinkedIn, and TikTok content</li>
-                            <li>Create educational content, reels, and social media assets</li>
-                            <li>Design marketing materials, presentations, and brochures</li>
-                            <li>Support audience growth and engagement through consistent content execution</li>
-                        </ul>
-                    </div>
+                <div class="fact-card">
+                    <div class="fact-icon">🚀</div>
+                    <h3>Growth Mindset</h3>
+                    <p>7+ years of scaling businesses from startup to success</p>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Social Media Manager (Project-Based)</h3>
-                        <p class="company">Gillens Sizzlers (Remote)</p>
-                        <p class="date">April 2026 – Present</p>
-                        <ul class="responsibilities">
-                            <li>Conduct social media audits and competitor research</li>
-                            <li>Create promotional graphics and short-form content</li>
-                            <li>Support content planning and audience engagement initiatives</li>
-                        </ul>
-                    </div>
+                <div class="fact-card">
+                    <div class="fact-icon">💡</div>
+                    <h3>Creative & Practical</h3>
+                    <p>Beautiful content backed by data-driven strategy</p>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>E-Commerce Owner / Manager</h3>
-                        <p class="company">E-Store by Hans</p>
-                        <p class="date">2016 – Present</p>
-                        <ul class="responsibilities">
-                            <li>Managed online store operations and customer service</li>
-                            <li>Used social media to promote products and drive traffic</li>
-                            <li>Developed practical knowledge of customer behavior and conversion</li>
-                        </ul>
-                    </div>
+                <div class="fact-card">
+                    <div class="fact-icon">🤝</div>
+                    <h3>Your Partner</h3>
+                    <p>Available, responsive, and committed to your success</p>
                 </div>
             </div>
         </div>
@@ -192,20 +255,31 @@
         <div class="container">
             <h2 class="section-title">Let's Connect</h2>
             <div class="contact-content">
-                <p>I'm always interested in hearing about new opportunities and projects. Feel free to reach out!</p>
-                <div class="contact-links">
-                    <a href="mailto:hanssevillano.va@gmail.com" class="contact-link">
-                        <span class="icon">✉️</span>
-                        <span>Email</span>
-                    </a>
-                    <a href="tel:+639624142831" class="contact-link">
-                        <span class="icon">📱</span>
-                        <span>Phone</span>
-                    </a>
-                    <a href="https://linkedin.com/in/roxanne-casili-178774324" target="_blank" class="contact-link">
-                        <span class="icon">💼</span>
-                        <span>LinkedIn</span>
-                    </a>
+                <p class="contact-intro">
+                    Ready to scale your business and focus on what matters most? Let's talk about how I can help.
+                </p>
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <span class="label">Email</span>
+                        <a href="mailto:hanssevillano.va@gmail.com">hanssevillano.va@gmail.com</a>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Phone</span>
+                        <a href="tel:+639624142831">+63 962 414 2831</a>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Location</span>
+                        <p>Lucena City, Philippines</p>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">LinkedIn</span>
+                        <a href="https://linkedin.com/in/roxanne-casili-178774324" target="_blank">Visit Profile</a>
+                    </div>
+                </div>
+                <div class="cta-section">
+                    <h3>What's Your Next Step?</h3>
+                    <p>Schedule a consultation call to discuss your needs</p>
+                    <a href="mailto:hanssevillano.va@gmail.com" class="btn btn-primary">Send Me a Message</a>
                 </div>
             </div>
         </div>
@@ -214,7 +288,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Roxanne S. Casili. All rights reserved.</p>
+            <p>&copy; 2024 Roxanne Casili. All rights reserved.</p>
+            <p>Helping businesses focus on growth while handling the digital details.</p>
         </div>
     </footer>
 
